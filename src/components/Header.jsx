@@ -2,15 +2,30 @@ import { Moon } from "lucide-react";
 
 export function Header() {
   return (
-    <header className="flex items-start justify-between mb-6">
-      <div>
-        <h1 className="font-semibold text-lg text-white">Matheus Coutinho</h1>
-        <p className="text-zinc-400 text-sm">Software Engineer</p>
+    <header className="flex items-center justify-between mb-4">
+      {/* Lado Esquerdo: Identificação */}
+      <div className="space-y-0.5">
+        <h1 className="font-semibold text-[17px] text-white tracking-tight">
+          Matheus Coutinho
+        </h1>
+        <p className="text-zinc-500 text-sm font-medium">
+          Software Engineer
+        </p>
       </div>
-      <nav className="flex items-center gap-6 text-sm text-zinc-400">
-        <a href="#" className="hover:text-white transition-colors">/projects</a>
-        <a href="#" className="hover:text-white transition-colors">/about</a>
-        <Moon size={16} className="cursor-pointer hover:text-white transition-colors" />
+
+      {/* Lado Direito: Navegação */}
+      <nav className="flex items-center gap-5">
+        <div className="flex items-center gap-4 text-[13px] text-zinc-400 border-r border-zinc-800 pr-5 mr-1">
+          <a href="#" className="hover:text-white transition-all duration-300">/projects</a>
+          <a href="#" className="hover:text-white transition-all duration-300">/about</a>
+        </div>
+        
+        <button 
+          aria-label="Toggle Theme"
+          className="p-2 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white hover:border-zinc-700 transition-all"
+        >
+          <Moon size={15} />
+        </button>
       </nav>
     </header>
   );

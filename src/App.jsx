@@ -1,37 +1,24 @@
 import { Header } from "./components/Header";
+import { Bio } from "./components/Bio";
 import { LinksCard } from "./components/LinksCard";
 import { TechGrid } from "./components/TechGrid";
+import { OnlineStatus } from "./components/OnlineStatus";
+import { Footer } from "./components/Footer";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-zinc-700">
       <div className="max-w-lg mx-auto px-6 py-10">
-
         <Header />
+        <Bio />
 
-        <p className="text-zinc-400 leading-relaxed mb-6 text-sm">
-          Full Stack Engineer focusing on building sustainable architectures, secure API integrations,
-          and high-performance databases.
-        </p>
+        <main className="space-y-4">
+          <LinksCard />
+          <TechGrid />
+        </main>
 
-        <LinksCard />
-
-        <TechGrid />
-
-        <footer className="mt-12">
-          {/* Linha de Links Secundários */}
-          <div className="flex justify-center gap-4 text-zinc-500 text-[11px] mb-4">
-            <a href="#" className="hover:text-zinc-300 transition-colors">Code</a>
-            <a href="#" className="hover:text-zinc-300 transition-colors">@MatheusLCoutinho</a>
-          </div>
-
-          <div className="text-center">
-            <p className="text-zinc-500 text-xs italic tracking-wide">
-              Not anyone like you.
-            </p>
-          </div>
-        </footer>
-
+        <OnlineStatus />
+        <Footer />
       </div>
     </div>
   );
