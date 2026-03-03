@@ -10,7 +10,13 @@ export function LinksCard() {
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-between px-5 py-4 border-b border-zinc-800 last:border-none hover:bg-zinc-800/50 transition-all group"
+          className={`
+  flex items-center justify-between px-5 py-4 border-b border-zinc-800 last:border-none 
+  transition-all group
+  ${link.highlight 
+    ? "bg-zinc-800/60 hover:bg-zinc-700 border-zinc-700" 
+    : "hover:bg-zinc-800/50"}
+`}
         >
           <div className="flex items-center gap-4">
             <link.icon size={18} className="text-zinc-400 group-hover:text-white transition-colors" />

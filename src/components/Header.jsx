@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Moon } from "lucide-react";
 
 export function Header() {
@@ -16,8 +17,8 @@ export function Header() {
       {/* Lado Direito: Navegação */}
       <nav className="flex items-center gap-5">
         <div className="flex items-center gap-4 text-[13px] text-zinc-400 border-r border-zinc-800 pr-5 mr-1">
-          <a href="#" className="hover:text-white transition-all duration-300">/projects</a>
-          <a href="#" className="hover:text-white transition-all duration-300">/about</a>
+            <Link to="/projects" className="hover:text-white transition-all">/projects</Link>
+            <Link to="/about" className="hover:text-white transition-all">/about</Link>
         </div>
         
         <button 
