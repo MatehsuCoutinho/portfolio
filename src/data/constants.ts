@@ -2,7 +2,7 @@ import { Linkedin, Github, Mail, FileText } from "lucide-react";
 
 export const LINKS = [
     { name: "LinkedIn", url: "https://www.linkedin.com/in/matheuslcoutinho/", icon: Linkedin, target: "_blank" },
-    { name: "GitHub", url: "https://github.com/MatehsuCoutinho/portfolio", icon: Github, target: "_blank" },
+    { name: "GitHub", url: "https://github.com/MatehsuCoutinho/", icon: Github, target: "_blank" },
     { name: "Contact Me", url: "mailto:matheuscoutinho.0420@gmail.com", icon: Mail },
     {
         name: "Download Curriculum",
