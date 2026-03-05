@@ -22,9 +22,17 @@ export function ProjectCard({ project }) {
 
             {/* Preview/Imagem */}
             <div className="aspect-video bg-black flex flex-col items-center justify-center border-y border-zinc-800 group relative overflow-hidden">
-                <span className="text-zinc-700 font-mono text-4xl font-bold tracking-tighter transition-transform group-hover:scale-110 duration-500">
-                    {project.title}
-                </span>
+                {project.image && project.image !== "/path-to-your-image.png" ? (
+                    <img
+                        src={project.image}
+                        alt={`Preview of ${project.title}`}
+                        className="w-full h-full object-cover transition-transform group-hover:scale-105 duration-500"
+                    />
+                ) : (
+                    <span className="text-zinc-700 font-mono text-4xl font-bold tracking-tighter transition-transform group-hover:scale-110 duration-500">
+                        {project.title}
+                    </span>
+                )}
             </div>
 
             {/* Botões de Ação na Base */}
