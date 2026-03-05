@@ -6,6 +6,7 @@ import { TechGrid } from "./components/TechGrid";
 import { OnlineStatus } from "./components/OnlineStatus";
 import { Footer } from "./components/Footer";
 import { ProjectsPage } from "./pages/Projects";
+import { AboutPage } from "./pages/About";
 
 export default function App() {
   return (
@@ -29,7 +30,7 @@ export default function App() {
 
             {/* Outras Páginas */}
             <Route path="/projects" element={<ProjectsPage />} />
-            {/* <Route path="/about" element={<AboutPage />} />*/}
+            <Route path="/about" element={<AboutPage />} />
           </Routes>
 
           <Footer />
