@@ -6,7 +6,7 @@ export const LINKS = [
     { name: "Contact Me", url: "mailto:matheuscoutinho.0420@gmail.com", icon: Mail },
     {
         name: "Download Curriculum",
-        url: "#",
+        url: "/public/Curriculo_Matheus_Coutinho.pdf",
         icon: FileText,
         highlight: true
     },
